@@ -4,6 +4,8 @@ import org.bukkit.ChatColor;
 
 public class Generic {
 
+    public static String BROADCAST_PREFIX = ChatColor.WHITE + "[" + ChatColor.GOLD + "Broadcast" + ChatColor.WHITE + "] " + ChatColor.RESET;
+
     public static String WARNING_ICON = ChatColor.YELLOW + "⚠ ";
 
     private static String chatErrorPrefix = ChatColor.YELLOW + "⚠ " + ChatColor.RED;
