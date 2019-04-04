@@ -1,0 +1,5 @@
+name: Medievo Utils
+version: ${project.version}
+main: com.bgmbox.medievoutils.MedievoUtils
+authors: [BGMP, BGMM, BGem]
+description: Utilidades complementarias para el plugin medieval
