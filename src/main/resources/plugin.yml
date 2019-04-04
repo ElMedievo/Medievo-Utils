@@ -1,4 +1,4 @@
-name: Medievo Utils
+name: Medievo-Utils
 version: ${project.version}
 main: com.bgmbox.medievoutils.MedievoUtils
 authors: [BGMP, BGMM, BGem]
