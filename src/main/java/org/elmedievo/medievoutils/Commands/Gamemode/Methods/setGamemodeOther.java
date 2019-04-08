@@ -1,13 +1,13 @@
-package com.bgmbox.medievoutils.Commands.Gamemode.Methods;
+package org.elmedievo.medievoutils.Commands.Gamemode.Methods;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 
-import static com.bgmbox.medievoutils.util.Generic.NO_GAMEMODE_MATCHED;
-import static com.bgmbox.medievoutils.util.Generic.WARNING_ICON;
-import static com.bgmbox.medievoutils.util.Methods.PlayerIsOnline.playerIsOnline;
+import static org.elmedievo.medievoutils.util.Generic.NO_GAMEMODE_MATCHED;
+import static org.elmedievo.medievoutils.util.Generic.WARNING_ICON;
+import static org.elmedievo.medievoutils.util.Methods.PlayerIsOnline.playerIsOnline;
 
 public class setGamemodeOther {
     public static void setGamemodeOther(Player player1, String player2_name, String gamemode) {

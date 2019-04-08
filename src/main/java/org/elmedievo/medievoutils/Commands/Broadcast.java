@@ -1,15 +1,15 @@
-package com.bgmbox.medievoutils.Commands;
+package org.elmedievo.medievoutils.Commands;
 
-import com.bgmbox.medievoutils.MedievoUtils;
+import org.elmedievo.medievoutils.MedievoUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.elmedievo.medievoutils.util.Methods.ConjoinCommandArgs;
 
-import static com.bgmbox.medievoutils.util.Generic.BROADCAST_PREFIX;
-import static com.bgmbox.medievoutils.util.Generic.NO_PERMISSION;
-import static com.bgmbox.medievoutils.util.Methods.ConjoinCommandArgs.buildMessageFromCommandArgs;
+import static org.elmedievo.medievoutils.util.Generic.BROADCAST_PREFIX;
+import static org.elmedievo.medievoutils.util.Generic.NO_PERMISSION;
 
 public class Broadcast implements CommandExecutor {
 
@@ -22,7 +22,7 @@ public class Broadcast implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("broadcast") && sender.hasPermission("medievo.utils.broadcast")) {
-            String msg = buildMessageFromCommandArgs(args, 0);
+            String msg = ConjoinCommandArgs.buildMessageFromCommandArgs(args, 0);
             String colored_msg = (ChatColor.translateAlternateColorCodes ('&', msg));
             Bukkit.broadcastMessage(BROADCAST_PREFIX + colored_msg);
         } else {

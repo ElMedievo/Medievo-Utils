@@ -1,10 +1,10 @@
-package com.bgmbox.medievoutils.Commands.Gamemode.Methods;
+package org.elmedievo.medievoutils.Commands.Gamemode.Methods;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 
-import static com.bgmbox.medievoutils.util.Generic.NO_GAMEMODE_MATCHED;
+import static org.elmedievo.medievoutils.util.Generic.NO_GAMEMODE_MATCHED;
 
 public class setGamemodeSelf {
     public static void setOwnGamemode(Player player, String gamemode) {

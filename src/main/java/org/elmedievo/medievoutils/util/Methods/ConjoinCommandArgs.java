@@ -1,4 +1,4 @@
-package com.bgmbox.medievoutils.util.Methods;
+package org.elmedievo.medievoutils.util.Methods;
 
 public class ConjoinCommandArgs {
     public static String buildMessageFromCommandArgs(String[] args, int startAtArgument) {

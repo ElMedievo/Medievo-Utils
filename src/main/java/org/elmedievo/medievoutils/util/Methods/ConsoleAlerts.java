@@ -1,4 +1,4 @@
-package com.bgmbox.medievoutils.util.Methods;
+package org.elmedievo.medievoutils.util.Methods;
 
 import org.bukkit.Bukkit;
 

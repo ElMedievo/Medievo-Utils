@@ -1,4 +1,4 @@
-package com.bgmbox.medievoutils.util;
+package org.elmedievo.medievoutils.util;
 
 import org.bukkit.ChatColor;
 

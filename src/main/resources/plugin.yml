@@ -1,6 +1,6 @@
 name: Medievo-Utils
 version: ${project.version}
-main: com.bgmbox.medievoutils.MedievoUtils
+main: org.elmedievo.MedievoUtils
 authors: [BGMP, BGMM, BGem]
 description: Utilidades complementarias para el plugin medieval
 commands:
@@ -12,3 +12,7 @@ commands:
     usage: /broadcast
     description: Broadcasts a message,
     aliases: [br]
+  teleport:
+    usage: /teleport
+    description: Teleports you.
+    aliases: [tp]

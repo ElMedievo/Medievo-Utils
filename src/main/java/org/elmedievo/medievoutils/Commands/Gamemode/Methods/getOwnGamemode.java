@@ -1,4 +1,4 @@
-package com.bgmbox.medievoutils.Commands.Gamemode.Methods;
+package org.elmedievo.medievoutils.Commands.Gamemode.Methods;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

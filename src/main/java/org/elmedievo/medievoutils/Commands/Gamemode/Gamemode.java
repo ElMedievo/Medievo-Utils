@@ -1,17 +1,17 @@
-package com.bgmbox.medievoutils.Commands.Gamemode;
+package org.elmedievo.medievoutils.Commands.Gamemode;
 
-import com.bgmbox.medievoutils.MedievoUtils;
+import org.elmedievo.medievoutils.MedievoUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import static com.bgmbox.medievoutils.Commands.Gamemode.Methods.getOwnGamemode.tellOwnGamemode;
-import static com.bgmbox.medievoutils.Commands.Gamemode.Methods.setGamemodeOther.setGamemodeOther;
-import static com.bgmbox.medievoutils.Commands.Gamemode.Methods.setGamemodeSelf.setOwnGamemode;
-import static com.bgmbox.medievoutils.util.Generic.NO_CONSOLE;
-import static com.bgmbox.medievoutils.util.Generic.NO_PERMISSION;
-import static com.bgmbox.medievoutils.util.Generic.TOO_MANY_ARGS;
+import static org.elmedievo.medievoutils.Commands.Gamemode.Methods.getOwnGamemode.tellOwnGamemode;
+import static org.elmedievo.medievoutils.Commands.Gamemode.Methods.setGamemodeOther.setGamemodeOther;
+import static org.elmedievo.medievoutils.Commands.Gamemode.Methods.setGamemodeSelf.setOwnGamemode;
+import static org.elmedievo.medievoutils.util.Generic.NO_CONSOLE;
+import static org.elmedievo.medievoutils.util.Generic.NO_PERMISSION;
+import static org.elmedievo.medievoutils.util.Generic.TOO_MANY_ARGS;
 
 public class Gamemode implements CommandExecutor {
 
