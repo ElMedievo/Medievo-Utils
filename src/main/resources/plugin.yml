@@ -1,6 +1,6 @@
 name: Medievo-Utils
 version: ${project.version}
-main: org.elmedievo.MedievoUtils
+main: org.elmedievo.medievoutils.MedievoUtils
 authors: [BGMP, BGMM, BGem]
 description: Utilidades complementarias para el plugin medieval
 commands:
