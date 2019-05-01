@@ -10,6 +10,7 @@ import org.elmedievo.medievoutils.util.Methods.ConjoinCommandArgs;
 
 import static org.elmedievo.medievoutils.util.Generic.BROADCAST_PREFIX;
 import static org.elmedievo.medievoutils.util.Generic.NO_PERMISSION;
+import static org.elmedievo.medievoutils.util.Methods.ConjoinCommandArgs.buildMessageFromCommandArgs;
 
 public class Broadcast implements CommandExecutor {
 
@@ -22,7 +23,7 @@ public class Broadcast implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("broadcast") && sender.hasPermission("medievo.utils.broadcast")) {
-            String msg = ConjoinCommandArgs.buildMessageFromCommandArgs(args, 0);
+            String msg = buildMessageFromCommandArgs(args, 0);
             String colored_msg = (ChatColor.translateAlternateColorCodes ('&', msg));
             Bukkit.broadcastMessage(BROADCAST_PREFIX + colored_msg);
         } else {

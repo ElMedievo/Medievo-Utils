@@ -10,8 +10,9 @@ import static org.elmedievo.medievoutils.util.Generic.WARNING_ICON;
 import static org.elmedievo.medievoutils.util.Methods.PlayerIsOnline.playerIsOnline;
 
 public class setGamemodeOther {
+    @SuppressWarnings("deprecation")
     public static void setGamemodeOther(Player player1, String player2_name, String gamemode) {
-        if (playerIsOnline(player2_name, false)) {
+        if (playerIsOnline(player2_name)) {
             Player player2 = Bukkit.getServer().getPlayer(player2_name);
             if (gamemode.equalsIgnoreCase("0") || gamemode.equalsIgnoreCase("survival")) {
                 player2.setGameMode(GameMode.SURVIVAL);
