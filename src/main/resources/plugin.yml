@@ -16,3 +16,11 @@ commands:
     usage: /teleport
     description: Teleports you.
     aliases: [tp]
+  message:
+    usage: /message
+    description: Send a private messages to other players.
+    aliases: [msg, pm]
+  reply:
+    usage: /reply
+    description: Replies to the last private message sent or received.
+    aliases: [r]
