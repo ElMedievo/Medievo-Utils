@@ -19,5 +19,6 @@ public class Generic {
             TOO_MANY_ARGS = chatErrorPrefix + "Too many arguments.",
             NO_CONSOLE = consoleErrorPrefix + "You must be a player to execute this command.",
             NO_PERMISSION = chatErrorPrefix + "You do not have permission.",
-            INVALID_COORDINATES = chatErrorPrefix + "Invalid coordinates.";
+            INVALID_COORDINATES = chatErrorPrefix + "Invalid coordinates.",
+            NOBODY_TO_REPLY_TO = chatErrorPrefix + "You have nobody to reply to.";
 }
