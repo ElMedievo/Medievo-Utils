@@ -17,6 +17,7 @@ public class Generic {
             NO_GAMEMODE_MATCHED = chatErrorPrefix + "No gamemode matched query.",
             NO_PLAYERS_MATCHED = chatErrorPrefix + "No players matched query.",
             TOO_MANY_ARGS = chatErrorPrefix + "Too many arguments.",
+            TOO_FEW_ARGS = chatErrorPrefix + "Too few arguments.",
             NO_CONSOLE = consoleErrorPrefix + "You must be a player to execute this command.",
             NO_PERMISSION = chatErrorPrefix + "You do not have permission.",
             INVALID_COORDINATES = chatErrorPrefix + "Invalid coordinates.",

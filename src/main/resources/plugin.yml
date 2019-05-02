@@ -4,14 +4,18 @@ main: org.elmedievo.medievoutils.MedievoUtils
 authors: [BGMP, BGMM, BGem]
 description: Utilidades complementarias para el plugin medieval
 commands:
-  gamemode:
-    usage: /gamemode
-    description: Sets your gamemode.
-    aliases: [gm]
   broadcast:
     usage: /broadcast
     description: Broadcasts a message,
     aliases: [br]
+  head:
+    usage: /head
+    description: Gives you any player's head.
+    aliases: [skull, ph]
+  gamemode:
+    usage: /gamemode
+    description: Sets your gamemode.
+    aliases: [gm]
   teleport:
     usage: /teleport
     description: Teleports you.
