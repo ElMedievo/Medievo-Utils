@@ -2,6 +2,7 @@ package org.elmedievo.medievoutils.Commands.Message.Methods;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 
 import static org.elmedievo.medievoutils.Commands.Message.MessageReplyQueue.messageReplyQueue;
@@ -19,6 +20,7 @@ public class sendReplyMessage {
                 Player receiverPlayer = Bukkit.getPlayer(receiver);
                 sender.sendMessage(PM_PREFIX + ChatColor.GRAY + "To " + receiverPlayer.getDisplayName() + ChatColor.WHITE + ": " + msg);
                 receiverPlayer.sendMessage(PM_PREFIX + ChatColor.GRAY + "From " + sender.getDisplayName() + ChatColor.WHITE + ": " + msg);
+                receiverPlayer.playSound(receiverPlayer.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 5, 2);
             } else {
                 sender.sendMessage(NO_PLAYERS_MATCHED);
             }
