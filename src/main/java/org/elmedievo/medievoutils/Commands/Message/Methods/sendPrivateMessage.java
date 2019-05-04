@@ -16,6 +16,7 @@ public class sendPrivateMessage {
         if (playerIsOnline(receiverInput)) {
             Player receiver = Bukkit.getPlayer(receiverInput);
             messageReplyQueue.put(sender.getName(), receiver.getName());
+            messageReplyQueue.put(receiver.getName(), sender.getName());
             sender.sendMessage(PM_PREFIX + ChatColor.GRAY + "To " + receiver.getDisplayName() + ChatColor.WHITE + ": " + msg);
             receiver.sendMessage(PM_PREFIX + ChatColor.GRAY + "From " + sender.getDisplayName() + ChatColor.WHITE + ": " + msg);
             receiver.playSound(receiver.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 5, 2);
