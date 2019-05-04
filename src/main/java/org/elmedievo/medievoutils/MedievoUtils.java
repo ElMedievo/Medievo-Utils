@@ -1,6 +1,9 @@
 package org.elmedievo.medievoutils;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.inventory.FurnaceRecipe;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.elmedievo.medievoutils.util.Methods.ConsoleAlerts;
 
@@ -21,6 +24,8 @@ public final class MedievoUtils extends JavaPlugin {
         loadMessageReplyQueue();
         ConsoleAlerts.sendConsoleAlert(ChatColor.GREEN + "Medievo-Utils was successfully enabled");
         ConsoleAlerts.sendConsoleAlert(ChatColor.GREEN + "-------------------------");
+
+        getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.LEATHER), Material.ROTTEN_FLESH, 0,1200));
     }
 
     @Override
