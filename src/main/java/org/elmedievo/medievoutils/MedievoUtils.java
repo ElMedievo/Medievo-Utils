@@ -7,6 +7,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.elmedievo.medievoutils.util.Methods.ConsoleAlerts;
 
+import static org.elmedievo.medievoutils.BukkitTasks.setGameParams;
 import static org.elmedievo.medievoutils.Commands.Message.MessageReplyQueue.loadMessageReplyQueue;
 import static org.elmedievo.medievoutils.util.CommandRegistry.registerCommands;
 import static org.elmedievo.medievoutils.util.EventRegistry.registerEvents;
@@ -22,6 +23,7 @@ public final class MedievoUtils extends JavaPlugin {
         registerCommands();
         registerEvents();
         loadMessageReplyQueue();
+        setGameParams();
         ConsoleAlerts.sendConsoleAlert(ChatColor.GREEN + "Medievo-Utils was successfully enabled");
         ConsoleAlerts.sendConsoleAlert(ChatColor.GREEN + "-------------------------");
 
