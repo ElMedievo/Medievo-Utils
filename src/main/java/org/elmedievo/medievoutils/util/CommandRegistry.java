@@ -1,6 +1,7 @@
 package org.elmedievo.medievoutils.util;
 
 import static org.elmedievo.medievoutils.Commands.Broadcast.registerBroadcastCommand;
+import static org.elmedievo.medievoutils.Commands.Fly.registerFlyCommand;
 import static org.elmedievo.medievoutils.Commands.Gamemode.Gamemode.registerGamemodeCommand;
 import static org.elmedievo.medievoutils.Commands.Head.registerHeadCommand;
 import static org.elmedievo.medievoutils.Commands.Message.Message.registerMessageCommand;
@@ -15,5 +16,6 @@ public class CommandRegistry {
         registerMessageCommand();
         registerReplyCommand();
         registerHeadCommand();
+        registerFlyCommand();
     }
 }

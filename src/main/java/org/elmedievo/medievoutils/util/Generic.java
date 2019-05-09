@@ -22,4 +22,11 @@ public class Generic {
             NO_PERMISSION = chatErrorPrefix + "You do not have permission.",
             INVALID_COORDINATES = chatErrorPrefix + "Invalid coordinates.",
             NOBODY_TO_REPLY_TO = chatErrorPrefix + "You have nobody to reply to.";
+
+    private static String successPrefix = ChatColor.GREEN + "";
+    public static String
+            FLY_TOGGLED_ON = ChatColor.YELLOW + "You can now fly!",
+            FLY_TOGGLED_ON_OTHER = ChatColor.YELLOW + "Fly mode enabled for " + ChatColor.RESET,
+            FLY_TOGGLED_OFF = ChatColor.YELLOW + "You can no longer fly!",
+            FLY_TOGGLED_OFF_OTHER = ChatColor.YELLOW + "Fly mode disabled for " + ChatColor.RESET;
 }
