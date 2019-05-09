@@ -4,6 +4,9 @@ main: org.elmedievo.medievoutils.MedievoUtils
 authors: [BGMP, BGMM, BGem]
 description: Utilidades complementarias para el plugin medieval
 commands:
+  fly:
+    usage: /fly
+    description: Enables fly mode.
   broadcast:
     usage: /broadcast
     description: Broadcasts a message,
@@ -28,3 +31,19 @@ commands:
     usage: /reply
     description: Replies to the last private message sent or received.
     aliases: [r]
+permissions:
+  medievo.utils.gamemode:
+    description: Permission for the gamemode command.
+    default: op
+  medievo.utils.teleport:
+    description:  Permission for the teleport command.
+    default: op
+  medievo.utils.broadcast:
+    description: Permission for the broadcast command.
+    default: op
+  medievo.utils.fly:
+    description: Permission for the fly command.
+    default: op
+  medievo.utils.head:
+    description: Permission for the heads command.
+    default: op
