@@ -4,6 +4,12 @@ main: org.elmedievo.medievoutils.MedievoUtils
 authors: [BGMP, BGMM, BGem]
 description: Utilidades complementarias para el plugin medieval
 commands:
+  restart:
+    usage: /restart
+    description: Restarts the server.
+  cancel:
+    usage: /cancel
+    description: Cancels a countdown.
   fly:
     usage: /fly
     description: Enables fly mode.
@@ -46,4 +52,10 @@ permissions:
     default: op
   medievo.utils.head:
     description: Permission for the heads command.
+    default: op
+  medievo.utils.restart:
+    description: Permission for restarting the server
+    default: op
+  medievo.utils.cancel:
+    description: Permission for cancelling a countdown.
     default: op

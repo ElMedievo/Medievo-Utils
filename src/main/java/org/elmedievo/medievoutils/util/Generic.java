@@ -21,12 +21,16 @@ public class Generic {
             NO_CONSOLE = consoleErrorPrefix + "You must be a player to execute this command.",
             NO_PERMISSION = chatErrorPrefix + "You do not have permission.",
             INVALID_COORDINATES = chatErrorPrefix + "Invalid coordinates.",
-            NOBODY_TO_REPLY_TO = chatErrorPrefix + "You have nobody to reply to.";
+            INVALID_TIME_PERIOD = chatErrorPrefix + "Invalid time period!",
+            NOBODY_TO_REPLY_TO = chatErrorPrefix + "You have nobody to reply to.",
+            ALREADY_RESTARTING = chatErrorPrefix + "A server restart is already queued!";
 
     private static String successPrefix = ChatColor.GREEN + "";
     public static String
             FLY_TOGGLED_ON = ChatColor.YELLOW + "You can now fly!",
             FLY_TOGGLED_ON_OTHER = ChatColor.YELLOW + "Fly mode enabled for " + ChatColor.RESET,
             FLY_TOGGLED_OFF = ChatColor.YELLOW + "You can no longer fly!",
-            FLY_TOGGLED_OFF_OTHER = ChatColor.YELLOW + "Fly mode disabled for " + ChatColor.RESET;
+            FLY_TOGGLED_OFF_OTHER = ChatColor.YELLOW + "Fly mode disabled for " + ChatColor.RESET,
+            LOADED_CONFIG = successPrefix + "Plugin configuration was successfully loaded.",
+            COUNTDOWNS_CANCELLED = successPrefix + "All countdowns cancelled!";
 }

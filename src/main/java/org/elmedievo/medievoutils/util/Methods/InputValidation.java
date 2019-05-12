@@ -9,4 +9,13 @@ public class InputValidation {
             return false;
         }
     }
+
+    public static boolean isInt(String input) {
+        try {
+            Integer.parseInt(input);
+            return true;
+        } catch (NumberFormatException exception) {
+            return false;
+        }
+    }
 }
