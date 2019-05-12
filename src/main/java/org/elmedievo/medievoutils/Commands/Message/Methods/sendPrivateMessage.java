@@ -17,8 +17,13 @@ public class sendPrivateMessage {
             Player receiver = Bukkit.getPlayer(receiverInput);
             messageReplyQueue.put(sender.getName(), receiver.getName());
             messageReplyQueue.put(receiver.getName(), sender.getName());
-            sender.sendMessage(PM_PREFIX + ChatColor.GRAY + "To " + receiver.getDisplayName() + ChatColor.WHITE + ": " + msg);
-            receiver.sendMessage(PM_PREFIX + ChatColor.GRAY + "From " + sender.getDisplayName() + ChatColor.WHITE + ": " + msg);
+            if (sender.hasPermission("medievo.chat.color")) {
+                sender.sendMessage(PM_PREFIX + ChatColor.GRAY + "To " + receiver.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.RESET + ChatColor.translateAlternateColorCodes ('&', msg));
+                receiver.sendMessage(PM_PREFIX + ChatColor.GRAY + "From " + sender.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.RESET + ChatColor.translateAlternateColorCodes ('&', msg));
+            } else {
+                sender.sendMessage(PM_PREFIX + ChatColor.GRAY + "To " + receiver.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.RESET +  msg);
+                receiver.sendMessage(PM_PREFIX + ChatColor.GRAY + "From " + sender.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.RESET + msg);
+            }
             receiver.playSound(receiver.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 5, 2);
         } else {
             sender.sendMessage(NO_PLAYERS_MATCHED);
