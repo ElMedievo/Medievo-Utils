@@ -21,6 +21,7 @@ public class Restart implements CommandExecutor {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("restart") && sender.hasPermission("medievo.utils.restart")) {
             if (!restarting) {
@@ -29,7 +30,7 @@ public class Restart implements CommandExecutor {
                     int defaultTime = defaultRestartTime;
                     if (defaultTime % 10 != 0) {
                         for (Player player : Bukkit.getServer().getOnlinePlayers()) {
-                            player.sendTitle(ChatColor.AQUA + "Restarting in...", ChatColor.RED + "" + defaultTime + " " + evalPluralSecond(defaultTime));
+                            player.sendTitle(ChatColor.AQUA + "Restarting in... ", ChatColor.RED + "" + defaultTime + " " + evalPluralSecond(defaultTime));
                         }
                         Bukkit.broadcastMessage(String.valueOf(ChatColor.AQUA) + "Server restarting in " + ChatColor.DARK_RED + defaultTime + ChatColor.AQUA + evalPluralSecond(defaultTime));
                     }
@@ -39,7 +40,7 @@ public class Restart implements CommandExecutor {
                         restarting = true;
                         if (Integer.parseInt(args[0]) % 10 != 0) {
                             for (Player player : Bukkit.getServer().getOnlinePlayers()) {
-                                player.sendTitle(ChatColor.AQUA + "Restarting in...", ChatColor.RED + args[0] + " " + evalPluralSecond(Integer.parseInt(args[0])));
+                                player.sendTitle(ChatColor.AQUA + "Restarting in... ", ChatColor.RED + args[0] + " " + evalPluralSecond(Integer.parseInt(args[0])));
                             }
                             Bukkit.broadcastMessage(String.valueOf(ChatColor.AQUA) + "Server restarting in " + ChatColor.DARK_RED + args[0] + ChatColor.AQUA + evalPluralSecond(Integer.parseInt(args[0])));
                         }
