@@ -1,0 +1,5 @@
+General:
+  restart: 30
+Scoreboard:
+  title: "El Medievo"
+  server-web: "www.elmedievo.org"
