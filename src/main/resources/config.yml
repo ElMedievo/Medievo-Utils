@@ -1,5 +1,7 @@
 General:
+  enable-welcoming: false
+  welcome-msg: ""
   restart: 30
 Scoreboard:
-  title: "El Medievo"
-  server-web: "www.elmedievo.org"
+  title: "&e&lEl Medievo"
+  server-web: "&bwww.elmedievo.org"
