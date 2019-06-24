@@ -8,6 +8,7 @@ import static org.elmedievo.medievoutils.Commands.Message.Message.registerMessag
 import static org.elmedievo.medievoutils.Commands.Message.Reply.registerReplyCommand;
 import static org.elmedievo.medievoutils.Commands.Restart.Cancel.registerCancelCommand;
 import static org.elmedievo.medievoutils.Commands.Restart.Restart.registerRestartCommand;
+import static org.elmedievo.medievoutils.Commands.Scoreboard.registerScoreboardCommand;
 import static org.elmedievo.medievoutils.Commands.Teleport.teleport.registerTeleportCommand;
 
 public class CommandRegistry {
@@ -21,5 +22,6 @@ public class CommandRegistry {
         registerFlyCommand();
         registerRestartCommand();
         registerCancelCommand();
+        registerScoreboardCommand();
     }
 }

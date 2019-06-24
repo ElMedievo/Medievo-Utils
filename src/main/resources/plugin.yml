@@ -37,6 +37,10 @@ commands:
     usage: /reply
     description: Replies to the last private message sent or received.
     aliases: [r]
+  reloadscoreboard:
+    usage: /reloadscoreboard
+    description: Reloads the scorebaord.
+    aliases: [rlscoreboard, rlscore, rlsb]
 permissions:
   medievo.utils.gamemode:
     description: Permission for the gamemode command.
@@ -58,4 +62,7 @@ permissions:
     default: op
   medievo.utils.cancel:
     description: Permission for cancelling a countdown.
+    default: op
+  medievo.utils.reloadscoreboard:
+    description: Permission for reloading the scoreboard.
     default: op

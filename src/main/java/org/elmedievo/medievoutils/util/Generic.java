@@ -32,5 +32,6 @@ public class Generic {
             FLY_TOGGLED_OFF = ChatColor.YELLOW + "You can no longer fly!",
             FLY_TOGGLED_OFF_OTHER = ChatColor.YELLOW + "Fly mode disabled for " + ChatColor.RESET,
             LOADED_CONFIG = successPrefix + "Plugin configuration was successfully loaded.",
+            RELOADED_SCOREBOARD = successPrefix + "Scoreboard reloaded!",
             COUNTDOWNS_CANCELLED = successPrefix + "All countdowns cancelled!";
 }
