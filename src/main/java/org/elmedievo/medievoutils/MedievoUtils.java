@@ -31,8 +31,6 @@ public final class MedievoUtils extends JavaPlugin {
         loadConfig();
         ConsoleAlerts.sendConsoleAlert(ChatColor.GREEN + "Medievo-Utils was successfully enabled");
         ConsoleAlerts.sendConsoleAlert(ChatColor.GREEN + "-------------------------");
-
-        getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.LEATHER), Material.ROTTEN_FLESH, 0,1200));
     }
 
     @Override
