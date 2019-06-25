@@ -18,7 +18,6 @@ public class teleportOther {
             Player player1 = Bukkit.getServer().getPlayer(inputForPlayer1);
             Player player2 = Bukkit.getServer().getPlayer(inputForPlayer2);
             player1.teleport(player2);
-            player2.sendMessage(ChatColor.YELLOW + "Teleporting...");
             if (teleporter instanceof Player) {
                 teleporter.sendMessage(ChatColor.YELLOW + "Teleported " + player1.getDisplayName() + ChatColor.YELLOW + " to " + player2.getDisplayName());
             } else {
