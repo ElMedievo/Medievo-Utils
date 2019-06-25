@@ -32,7 +32,7 @@ public class Restart implements CommandExecutor {
                         for (Player player : Bukkit.getServer().getOnlinePlayers()) {
                             player.sendTitle(ChatColor.AQUA + "Restarting in... ", ChatColor.RED + "" + defaultTime + " " + evalPluralSecond(defaultTime));
                         }
-                        Bukkit.broadcastMessage(String.valueOf(ChatColor.AQUA) + "Server restarting in " + ChatColor.DARK_RED + defaultTime + ChatColor.AQUA + evalPluralSecond(defaultTime));
+                        Bukkit.broadcastMessage(String.valueOf(ChatColor.AQUA) + "Server restarting in " + ChatColor.DARK_RED + defaultTime + " " + ChatColor.AQUA + evalPluralSecond(defaultTime));
                     }
                     beginRestartCountdown(defaultTime);
                 } else if (args.length == 1) {
